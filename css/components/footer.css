@@ -1,0 +1,37 @@
+.sobre-mi {
+  background-color: var(--color-blanco);
+}
+
+.sobre-mi__contenido {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+}
+
+.sobre-mi__herramientas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-sm);
+  margin-top: var(--espacio-md);
+}
+
+.sobre-mi__herramientas span {
+  padding: var(--espacio-xs) var(--espacio-sm);
+  border: 1px solid var(--color-texto);
+  font-size: var(--texto-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contacto__contenido {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+}
+
+.footer {
+  padding: var(--espacio-md);
+  border-top: 1px solid var(--color-texto);
+  text-align: center;
+  font-size: var(--texto-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

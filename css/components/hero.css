@@ -1,0 +1,31 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: var(--espacio-xl) var(--espacio-md);
+  padding-top: calc(var(--espacio-xl) + 60px);
+}
+
+.hero__contenido {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero__nombre {
+  font-size: var(--texto-4xl);
+  margin-bottom: var(--espacio-md);
+  line-height: 1;
+}
+
+.hero__titulo {
+  font-size: var(--texto-lg);
+  margin-bottom: var(--espacio-xs);
+  max-width: 50ch;
+}
+
+.hero__subtitulo {
+  font-size: var(--texto-base);
+  color: var(--color-acento);
+  margin-bottom: var(--espacio-lg);
+}
