@@ -20,4 +20,23 @@ function renderGaleria(lista) {
   galeria.innerHTML = lista.map(crearTarjeta).join("");
 }
 
+function filtrarProyectos(categoria) {
+  if (categoria === "todos") {
+    renderGaleria(proyectos);
+  } else {
+    const filtrados = proyectos.filter((p) => p.categoria === categoria);
+    renderGaleria(filtrados);
+  }
+}
+
+const botonesFiltro = document.querySelectorAll(".filtro");
+
+botonesFiltro.forEach((boton) => {
+  boton.addEventListener("click", () => {
+    botonesFiltro.forEach((b) => b.classList.remove("activo"));
+    boton.classList.add("activo");
+    filtrarProyectos(boton.dataset.filtro);
+  });
+});
+
 renderGaleria(proyectos);
