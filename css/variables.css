@@ -5,8 +5,10 @@
   --color-secundario: #742622;
   --color-blanco: #ffffff;
 
-  --fuente-titulo: "Cormorant Garamond", serif;
-  --fuente-cuerpo: "Jost", sans-serif;
+  --fuente-titulo: 'aviano-serif', serif;
+  --fuente-cuerpo: 'freight-disp-comp-pro', serif;
+  --fuente-cuerpo-weight: 300;
+  --letter-spacing-cuerpo: -0.05em;
 
   --texto-xs: 0.75rem;
   --texto-sm: 0.875rem;
@@ -23,7 +25,7 @@
   --espacio-lg: 4rem;
   --espacio-xl: 8rem;
 
-  --radio-borde: 2px;
+  --radio-borde: 999px;
   --transicion: all 0.3s ease;
   --sombra: 0 4px 20px rgba(0, 0, 0, 0.08);
   --ancho-maximo: 1200px;

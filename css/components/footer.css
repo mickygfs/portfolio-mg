@@ -17,9 +17,9 @@
 .sobre-mi__herramientas span {
   padding: var(--espacio-xs) var(--espacio-sm);
   border: 1px solid var(--color-texto);
+  border-radius: var(--radio-borde);
   font-size: var(--texto-sm);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .contacto__contenido {
@@ -32,8 +32,7 @@
   border-top: 1px solid var(--color-texto);
   text-align: center;
   font-size: var(--texto-sm);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .detalle {
@@ -51,8 +50,7 @@
 .detalle__volver {
   display: inline-block;
   font-size: var(--texto-sm);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: var(--espacio-md);
   transition: var(--transicion);
 }
@@ -98,8 +96,7 @@
 
 .detalle__ficha-item span {
   font-size: var(--texto-xs);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--color-acento);
   display: block;
   margin-bottom: var(--espacio-xs);
