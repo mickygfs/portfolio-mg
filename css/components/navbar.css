@@ -7,8 +7,8 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--espacio-sm) var(--espacio-md);
-  background-color: var(--color-texto);
-  color: var(--color-blanco);
+  background-color: var(--color-blanco);
+  color: var(--color-texto);
   z-index: 100;
   border-bottom: 1px solid transparent;
   transition: var(--transicion);
@@ -27,7 +27,7 @@
   height: 36px;
   width: auto;
   display: block;
-  filter: brightness(0) invert(1);
+  filter: brightness(0);
 }
 
 .navbar__links {
@@ -54,5 +54,5 @@
 }
 
 .navbar a {
-  color: var(--color-blanco);
+  color: var(--color-texto);
 }
