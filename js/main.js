@@ -56,3 +56,17 @@ document.querySelectorAll(".hero, .sobre-mi").forEach((seccion) => {
   seccion.classList.add("fade-in");
   observer.observe(seccion);
 });
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
+document.querySelector(".navbar__toggle").addEventListener("click", () => {
+  document.querySelector(".navbar__links").classList.toggle("abierto");
+});
