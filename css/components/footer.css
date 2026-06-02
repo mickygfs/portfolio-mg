@@ -35,6 +35,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
 .detalle {
   padding-top: calc(var(--espacio-xl) + 60px);
   max-width: var(--ancho-maximo);
@@ -126,5 +127,24 @@
   .detalle__contenido {
     grid-template-columns: 1fr;
     gap: var(--espacio-lg);
+  }
+}
+
+.detalle__galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacio-md);
+  margin-top: var(--espacio-lg);
+}
+
+.detalle__galeria img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .detalle__galeria {
+    grid-template-columns: 1fr;
   }
 }
