@@ -1,0 +1,131 @@
+.proyectos {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+}
+
+.proyectos__cabecera {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--espacio-lg);
+  flex-wrap: wrap;
+  gap: var(--espacio-sm);
+}
+
+.proyectos__filtros {
+  display: flex;
+  gap: var(--espacio-sm);
+}
+
+.filtro {
+  background: none;
+  border: none;
+  font-family: var(--fuente-cuerpo);
+  font-size: var(--texto-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: var(--espacio-xs) 0;
+  border-bottom: 1px solid transparent;
+  transition: var(--transicion);
+}
+
+.filtro:hover {
+  color: var(--color-acento);
+}
+
+.filtro.activo {
+  border-bottom: 1px solid var(--color-texto);
+}
+
+.proyectos__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacio-md);
+}
+
+.tarjeta a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tarjeta__imagen {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  margin-bottom: var(--espacio-sm);
+  background-color: #e8e3da;
+}
+
+.tarjeta__imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transicion);
+}
+
+.tarjeta:hover .tarjeta__imagen img {
+  transform: scale(1.03);
+}
+
+.tarjeta__categoria {
+  font-size: var(--texto-xs);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-acento);
+  display: block;
+  margin-bottom: var(--espacio-xs);
+}
+
+.tarjeta__titulo {
+  font-family: var(--fuente-titulo);
+  font-size: var(--texto-xl);
+  font-weight: 400;
+  margin-bottom: var(--espacio-xs);
+}
+
+.tarjeta__descripcion {
+  font-size: var(--texto-sm);
+  color: var(--color-texto);
+  opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .proyectos__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .proyectos__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proyectos__cabecera {
+    flex-direction: column;
+  }
+
+  .hero__nombre {
+    font-size: var(--texto-3xl);
+  }
+
+  .navbar__links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-fondo);
+    padding: var(--espacio-md);
+    border-bottom: 1px solid var(--color-texto);
+  }
+
+  .navbar__links.abierto {
+    display: flex;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
+}
