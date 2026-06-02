@@ -40,3 +40,19 @@ botonesFiltro.forEach((boton) => {
 });
 
 renderGaleria(proyectos);
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  { threshold: 0.1 },
+);
+
+document.querySelectorAll(".hero, .sobre-mi").forEach((seccion) => {
+  seccion.classList.add("fade-in");
+  observer.observe(seccion);
+});
